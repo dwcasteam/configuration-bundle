@@ -1,0 +1,54 @@
+{
+    "description": "Configuration bundle to manage configuration applications in AS",
+    "name": "dwcasteam/configuration-bundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": ["component", "scaffolding", "scaffold"],
+    "authors": [
+        {
+            "name": "Putera Kahfi",
+            "email": "pkahfi@dwebsite.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0",
+        "doctrine/inflector": "^1.2|^2.0",
+        "nikic/php-parser": "^4.11",
+        "symfony/config": "^4.0|^5.0",
+        "symfony/console": "^4.0|^5.0",
+        "symfony/dependency-injection": "^4.0|^5.0",
+        "symfony/deprecation-contracts": "^2.2",
+        "symfony/filesystem": "^4.0|^5.0",
+        "symfony/finder": "^4.0|^5.0",
+        "symfony/framework-bundle": "^4.0|^5.0",
+        "symfony/http-kernel": "^4.0|^5.0"
+    },
+    "require-dev": {
+        "composer/semver": "^3.0@dev",
+        "doctrine/doctrine-bundle": "^1.8|^2.0",
+        "doctrine/orm": "^2.3",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "friendsoftwig/twigcs": "^4.1.0|^5.0.0",
+        "symfony/http-client": "^4.3|^5.0",
+        "symfony/phpunit-bridge": "^4.3|^5.0",
+        "symfony/process": "^4.0|^5.0",
+        "symfony/security-core": "^4.0|^5.0",
+        "symfony/yaml": "^4.0|^5.0"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": { "DWCAS\\Bundle\\ConfigurationBundle\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "DWCAS\\Bundle\\ConfigurationBundle\\Tests\\": "tests/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
+    }
+}
